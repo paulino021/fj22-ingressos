@@ -11,6 +11,7 @@ import java.util.List;
  * Created by nando on 03/03/17.
  */
 @Repository
+
 public class FilmeDao {
 
     @PersistenceContext
