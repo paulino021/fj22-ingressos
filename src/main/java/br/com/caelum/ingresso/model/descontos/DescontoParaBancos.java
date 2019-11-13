@@ -2,7 +2,7 @@ package br.com.caelum.ingresso.model.descontos;
 
 import java.math.BigDecimal;
 
-public class DescontoParaBanco implements Desconto{
+public class DescontoParaBancos implements Desconto{
 	
 	@Override
 	public BigDecimal aplicarDescontoSobre(BigDecimal precoOriginal) {
@@ -10,6 +10,11 @@ public class DescontoParaBanco implements Desconto{
 	}
 	private BigDecimal trintaPorCentoSobre(BigDecimal precoOriginal) {
 	return precoOriginal.multiply(new BigDecimal("0.3"));
+	}
+	
+	@Override
+	public String getDescricao() {
+		return "Desconto Banco";
 	}
 	
 
