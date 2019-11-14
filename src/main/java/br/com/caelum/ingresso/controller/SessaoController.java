@@ -34,8 +34,7 @@ public class SessaoController {
 	private SessaoDao sessaoDao;
 	@Autowired
 	private OmdbClient client;
-	@Autowired
-	private Carrinho carrinho;
+
 	
 	@GetMapping("/admin/sessao")
 	public ModelAndView form(@RequestParam("salaId") Integer salaId , SessaoForm form) {
